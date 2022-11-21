@@ -35,7 +35,7 @@ jobs:
                     PORT=8000
      - name: Deploy Amazon ECS task definition
        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
-           with:
+       with:
             task-definition: ${{ steps.task-def.outputs.task-definition }}
             service: servece
             cluster: api-go-devops
