@@ -30,13 +30,13 @@ jobs:
         password: ${{ secrets.PASSWORD_DOCKER_HUB }}
         
         
-   # - name: Build and push Docker images
-   #   uses: docker/build-push-action@v3.0.0
-   #   with:
-   #     context: .
+    - name: Build and push Docker images
+      uses: docker/build-push-action@v3.0.0
+      with:
+        context: .
  
-   #     file: ./Dockerfile
+        file: ./Dockerfile
     # Push is a shorthand for --output=type=registry
-   #     push: true
+        push: true
     # List of tags
-    #    tags: leonardosartorello/go_ci:${{ github.run_number }}
+        tags: mtsdevops/conteineres-docker:${{ github.run_number }}
