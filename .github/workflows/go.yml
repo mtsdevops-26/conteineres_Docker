@@ -69,11 +69,11 @@ jobs:
     
   Deploy_ECS:
     needs: docker
-    uses: ./.github/workflows/ECS.yml
+    uses: ./.github/workflows/ecs.yml
     secrets: inherit
     
-  LoadTest:
-    needs: docker
-    if: github.head_ref == 'refs/heads/main'
-    uses: ./.github/workflows/LoadTest.yml
-    secrets: inherit
+  #LoadTest:
+    #needs: docker
+    #if: github.head_ref == 'refs/heads/main'
+    #uses: ./.github/workflows/LoadTest.yml
+    #secrets: inherit
