@@ -1,4 +1,4 @@
-name: Entrega continua
+name: ci
 
 on:
   workflow_call:
